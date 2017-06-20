@@ -1,0 +1,689 @@
+		1.1 Introduction/50
+		1.2 Software/51
+		1.3 People/53
+		1.4 Computer science/56
+		1.5 Computers are everywhere/57
+			1.5.1 Screens and no screens/58
+			1.5.2 Shipping/58
+			1.5.3 Telecommunications/60
+			1.5.4 Medicine/62
+			1.5.5 Information/63
+			1.5.6 A vertical view/65
+			1.5.7 So what?/66
+		1.6 Ideals for programmers/66
+Part I The Basics/73
+	Chapter 2 Hello, World!/75
+		2.1 Programs/76
+		2.2 The classic first program/77
+		2.3 Compilation/79
+		2.4 Linking/83
+		2.5 Programming environments/84
+	Chapter 3 Objects, Types, and Values/91
+		3.1 Input/92
+		3.2 Variables/94
+		3.3 Input and type/96
+		3.4 Operations and operators/98
+		3.5 Assignment and initialization/101
+			3.5.1 An example: detect repeated words/103
+		3.6 Composite assignment operators/105
+			3.6.1 An example: find repeated words/105
+		3.7 Names/106
+		3.8 Types and objects/109
+		3.9 Type safety/110
+			3.9.1 Safe conversions/111
+			3.9.2 Unsafe conversions/112
+	Chapter 4 Computation/121
+		4.1 Computation/122
+		4.2 Objectives and tools/124
+		4.3 Expressions/126
+			4.3.1 Constant expressions/127
+			4.3.2 Operators/129
+			4.3.3 Conversions/131
+		4.4 Statements/132
+			4.4.1 Selection/134
+			4.4.2 Iteration/141
+		4.5 Functions/145
+			4.5.1 Why bother with functions?/147
+			4.5.2 Function declarations/149
+		4.6 vector/149
+			4.6.1 Traversing a vector/151
+			4.6.2 Growing a vector/151
+			4.6.3 A numeric example/152
+			4.6.4 A text example/155
+		4.7 Language features/157
+	Chapter 5 Errors/165
+		5.1 Introduction/166
+		5.2 Sources of errors/168
+		5.3 Compile-time errors/168
+			5.3.1 Syntax errors/169
+			5.3.2 Type errors/170
+			5.3.3 Non-errors/171
+		5.4 Link-time errors/171
+		5.5 Run-time errors/172
+			5.5.1 The caller deals with errors/174
+			5.5.2 The callee deals with errors/175
+			5.5.3 Error reporting/177
+		5.6 Exceptions/178
+			5.6.1 Bad arguments/179
+			5.6.2 Range errors/180
+			5.6.3 Bad input/182
+			5.6.4 Narrowing errors/185
+		5.7 Logic errors/186
+		5.8 Estimation/189
+		5.9 Debugging/190
+			5.9.1 Practical debug advice/191
+		5.10 Pre- and post-conditions/195
+			5.10.1 Post-conditions/197
+		5.11 Testing/198
+	Chapter 6 Writing a Program/205
+		6.1 A problem/206
+		6.2 Thinking about the problem/207
+			6.2.1 Stages of development/208
+			6.2.2 Strategy/208
+		6.3 Back to the calculator!/210
+			6.3.1 First attempt/211
+			6.3.2 Tokens/213
+			6.3.3 Implementing tokens/215
+			6.3.4 Using tokens/217
+			6.3.5 Back to the drawing board/218
+		6.4 Grammars/220
+			6.4.1 A detour: English grammar/225
+			6.4.2 Writing a grammar/226
+		6.5 Turning a grammar into code/227
+			6.5.1 Implementing grammar rules/228
+			6.5.2 Expressions/229
+			6.5.3 Terms/232
+			6.5.4 Primary expressions/234
+		6.6 Trying the first version/235
+		6.7 Trying the second version/240
+		6.8 Token streams/241
+			6.8.1 Implementing Token_stream/243
+			6.8.2 Reading tokens/244
+			6.8.3 Reading numbers/246
+		6.9 Program structure/247
+	Chapter 7 Completing a Program/253
+		7.1 Introduction/254
+		7.2 Input and output/254
+		7.3 Error handling/256
+		7.4 Negative numbers/261
+		7.5 Remainder: %/262
+		7.6 Cleaning up the code/264
+			7.6.1 Symbolic constants/264
+			7.6.2 Use of functions/266
+			7.6.3 Code layout/267
+			7.6.4 Commenting/269
+		7.7 Recovering from errors/271
+		7.8 Variables/274
+			7.8.1 Variables and definitions/274
+			7.8.2 Introducing names/279
+			7.8.3 Predefined names/282
+			7.8.4 Are we there yet?/282
+	Chapter 8 Technicalities: Functions, etc./287
+		8.1 Technicalities/288
+		8.2 Declarations and definitions/289
+			8.2.1 Kinds of declarations/293
+			8.2.3 Default initialization/295
+		8.3 Header files/296
+		8.4 Scope/298
+		8.5 Function call and return/304
+			8.5.1 Declaring arguments and return type/304
+			8.5.2 Returning a value/306
+			8.5.3 Pass-by-value/307
+			8.5.4 Pass-by-const-reference/308
+			8.5.5 Pass-by-reference/311
+			8.5.6 Pass-by-value vs. pass-by-reference/313
+			8.5.7 Argument checking and conversion/316
+			8.5.8 Function call implementation/317
+			8.5.9 constexpr functions/322
+		8.6 Order of evaluation/323
+			8.6.1 Expression evaluation/324
+			8.6.2 Global initialization/325
+		8.7 Namespaces/326
+			8.7.1 using declarations and using directives/328
+	Chapter 9 Technicalities: Classes, etc./335
+		9.1 User-defined types/336
+		9.2 Classes and members/337
+		9.3 Interface and implementation/338
+		9.4 Evolving a class/340
+			9.4.1 struct and functions/340
+			9.4.2 Member functions and constructors/342
+			9.4.3 Keep details private/344
+			9.4.4 Defining member functions/346
+			9.4.5 Referring to the current object/349
+			9.4.6 Reporting errors/349
+		9.5 Enumerations/350
+			9.5.1 “Plain” enumerations/352
+		9.6 Operator overloading/353
+		9.7 Class interfaces/355
+			9.7.1 Argument types/356
+			9.7.2 Copying/358
+			9.7.3 Default constructors/359
+			9.7.4 const member functions/362
+			9.7.5 Members and “helper functions”/364
+		9.8 The Date class/366
+	Chapter 10 Input and Output Streams/377
+		10.1 Input and output/378
+		10.2 The I/O stream model/379
+		10.3 Files/381
+		10.4 Opening a file/382
+		10.5 Reading and writing a file/384
+		10.6 I/O error handling/386
+		10.7 Reading a single value/390
+			10.7.1 Breaking the problem into manageable parts/391
+			10.7.2 Separating dialog from function/394
+		10.8 User-defined output operators/395
+		10.9 User-defined input operators/397
+		10.10 A standard input loop/397
+		10.11 Reading a structured file/399
+			10.11.1 In-memory representation/400
+			10.11.2 Reading structured values/402
+			10.11.3 Changing representations/406
+	Chapter 11 Customizing Input and Output/411
+		11.1 Regularity and irregularity/412
+		11.2 Output formatting/412
+			11.2.1 Integer output/413
+			11.2.2 Integer input/415
+			11.2.3 Floating-point output/416
+			11.2.4 Precision/417
+			11.2.5 Fields/419
+		11.3 File opening and positioning/420
+			11.3.1 File open modes/420
+			11.3.2 Binary files/422
+			11.3.3 Positioning in files/425
+		11.4 String streams/426
+		11.5 Line-oriented input/427
+		11.6 Character classification/428
+		11.7 Using nonstandard separators/430
+		11.8 And there is so much more/438
+	Chapter 12 A Display Model/443
+		12.1 Why graphics?/444
+		12.2 A display model/445
+		12.3 A first example/446
+		12.4 Using a GUI library/450
+		12.5 Coordinates/451
+		12.6 Shapes/452
+		12.7 Using Shape primitives/453
+			12.7.1 Graphics headers and main/453
+			12.7.2 An almost blank window/454
+			12.7.3 Axis/456
+			12.7.4 Graphing a function/458
+			12.7.5 Polygons/459
+			12.7.6 Rectangles/460
+			12.7.7 Fill/463
+			12.7.8 Text/463
+			12.7.9 Images/465
+			12.7.10 And much more/466
+		12.8 Getting this to run/467
+			12.8.1 Source files/469
+	Chapter 13 Graphics Classes/473
+		13.1 Overview of graphics classes/474
+		13.2 Point and Line/476
+		13.3 Lines/479
+		13.4 Color/482
+		13.5 Line_style/484
+		13.6 Open_polyline/487
+		13.7 Closed_polyline/488
+		13.8 Polygon/490
+		13.9 Rectangle/492
+		13.10 Managing unnamed objects/497
+		13.11 Text/499
+		13.12 Circle/502
+		13.13 Ellipse/504
+		13.14 Marked_polyline/506
+		13.15 Marks/508
+		13.16 Mark/510
+		13.17 Images/511
+	Chapter 14 Graphics Class Design/519
+		14.1 Design principles/520
+			14.1.1 Types/520
+			14.1.2 Operations/522
+			14.1.3 Naming/523
+			14.1.4 Mutability/524
+		14.2 Shape/525
+			14.2.1 An abstract class/527
+			14.2.2 Access control/528
+			14.2.3 Drawing shapes/532
+			14.2.4 Copying and mutability/535
+		14.3 Base and derived classes/536
+			14.3.1 Object layout/538
+			14.3.2 Deriving classes and defining virtual functions/539
+			14.3.3 Overriding/540
+			14.3.4 Access/543
+			14.3.5 Pure virtual functions/544
+		14.4 Benefits of object-oriented programming/545
+	Chapter 15 Graphing Functions and Data/551
+		15.1 Introduction/552
+		15.2 Graphing simple functions/552
+		15.3 Function/556
+			15.3.1 Default Arguments/557
+			15.3.2 More examples/559
+			15.3.3 Lambda expressions/560
+		15.4 Axis/561
+		15.5 Approximation/564
+		15.6 Graphing data/569
+			15.6.1 Reading a file/571
+			15.6.2 General layout/573
+			15.6.3 Scaling data/574
+			15.6.4 Building the graph/575
+	Chapter 16 Graphical User Interfaces/583
+		16.1 User interface alternatives/584
+		16.2 The “Next” button/585
+		16.3 A simple window/586
+			16.3.1 A callback function/588
+			16.3.2 A wait loop/591
+			16.3.3 A lambda expression as a callback/592
+		16.4 Button and other Widgets/593
+			16.4.1 Widgets/593
+			16.4.2 Buttons/595
+			16.4.3 In_box and Out_box/595
+			16.4.4 Menus/596
+		16.5 An example/597
+		16.6 Control inversion/601
+		16.7 Adding a menu/602
+		16.8 Debugging GUI code/607
+Part III Data and Algorithms/613
+	Chapter 17 Vector and Free Store/615
+		17.1 Introduction/616
+		17.2 vector basics/618
+		17.3 Memory, addresses, and pointers/620
+			17.3.1 The sizeof operator/622
+		17.4 Free store and pointers/623
+			17.4.1 Free-store allocation/625
+			17.4.2 Access through pointers/626
+			17.4.3 Ranges/627
+			17.4.4 Initialization/628
+			17.4.5 The null pointer/630
+			17.4.6 Free-store deallocation/630
+		17.5 Destructors/633
+			17.5.1 Generated destructors/635
+			17.5.2 Destructors and free store/636
+		17.6 Access to elements/637
+		17.7 Pointers to class objects/638
+		17.8 Messing with types: void* and casts/640
+		17.9 Pointers and references/642
+			17.9.1 Pointer and reference parameters/643
+			17.9.2 Pointers, references, and inheritance/644
+			17.9.3 An example: lists/645
+			17.9.4 List operations/647
+			17.9.5 List use/648
+		17.10 The this pointer/650
+			17.10.1 More link use/652
+	Chapter 18 Vectors and Arrays/659
+		18.1 Introduction/660
+		18.2 Initialization/661
+		18.3 Copying/663
+			18.3.1 Copy constructors/665
+			18.3.2 Copy assignments/666
+			18.3.3 Copy terminology/668
+			18.3.4 Moving/669
+		18.4 Essential operations/672
+			18.4.1 Explicit constructors/674
+			18.4.2 Debugging constructors and destructors/675
+		18.5 Access to vector elements/678
+			18.5.1 Overloading on const/679
+		18.6 Arrays/680
+			18.6.1 Pointers to array elements/682
+			18.6.2 Pointers and arrays/684
+			18.6.3 Array initialization/686
+			18.6.4 Pointer problems/688
+		18.7 Examples: palindrome/691
+			18.7.1 Palindromes using string/691
+			18.7.2 Palindromes using arrays/692
+			18.7.3 Palindromes using pointers/693
+	Chapter 19 Vector, Templates, and Exceptions/699
+		19.1 The problems/700
+		19.2 Changing size/703
+			19.2.1 Representation/703
+			19.2.2 reserve and capacity/705
+			19.2.3 resize/706
+			19.2.4 push_back/706
+			19.2.5 Assignment/707
+			19.2.6 Our vector so far/709
+		19.3 Templates/710
+			19.3.1 Types as template parameters/711
+			19.3.2 Generic programming/713
+			19.3.3 Concepts/715
+			19.3.4 Containers and inheritance/718
+			19.3.5 Integers as template parameters/719
+			19.3.6 Template argument deduction/721
+			19.3.7 Generalizing vector/722
+		19.4 Range checking and exceptions/725
+			19.4.1 An aside: design considerations/726
+			19.4.2 A confession: macros/728
+		19.5 Resources and exceptions/729
+			19.5.1 Potential resource management problems/730
+			19.5.2 Resource acquisition is initialization/732
+			19.5.3 Guarantees/733
+			19.5.4 unique_ptr/735
+			19.5.5 Return by moving/736
+			19.5.6 RAII for vector/737
+	Chapter 20 Containers and Iterators/743
+		20.1 Storing and processing data/744
+			20.1.1 Working with data/745
+			20.1.2 Generalizing code/746
+		20.2 STL ideals/749
+		20.3 Sequences and iterators/752
+			20.3.1 Back to the example/755
+		20.4 Linked lists/756
+			20.4.1 List operations/758
+			20.4.2 Iteration/759
+		20.5 Generalizing vector yet again/761
+			20.5.1 Container traversal/764
+			20.5.2 auto/764
+		20.6 An example: a simple text editor/766
+			20.6.1 Lines/768
+			20.6.2 Iteration/769
+		20.7 vector, list, and string/773
+			20.7.1 insert and erase/774
+		20.8 Adapting our vector to the STL/777
+		20.9 Adapting built-in arrays to the STL/779
+		20.10 Container overview/781
+			20.10.1 Iterator categories/783
+	Chapter 21 Algorithms and Maps/789
+		21.1 Standard library algorithms/790
+		21.2 The simplest algorithm: find()/791
+			21.2.1 Some generic uses/793
+		21.3 The general search: find_if()/795
+		21.4 Function objects/797
+			21.4.1 An abstract view of function objects/798
+			21.4.2 Predicates on class members/799
+			21.4.3 Lambda expressions/801
+		21.5 Numerical algorithms/802
+			21.5.1 Accumulate/802
+			21.5.2 Generalizing accumulate()/804
+			21.5.3 Inner product/806
+			21.5.4 Generalizing inner_product()/807
+		21.6 Associative containers/808
+			21.6.1 map/808
+			21.6.2 map overview/811
+			21.6.3 Another map example/814
+			21.6.4 unordered_map/817
+			21.6.5 set/819
+		21.7 Copying/821
+			21.7.1 Copy/821
+			21.7.2 Stream iterators/822
+			21.7.3 Using a set to keep order/825
+			21.7.4 copy_if/826
+		21.8 Sorting and searching/826
+		21.9 Container algorithms/829
+Part IV Broadening the View/835
+	Chapter 22 Ideals and History/837
+		22.1 History, ideals, and professionalism/838
+			22.1.1 Programming language aims and philosophies/839
+			22.1.2 Programming ideals/840
+			22.1.3 Styles/paradigms/847
+		22.2 Programming language history overview/850
+			22.2.1 The earliest languages/851
+			22.2.2 The roots of modern languages/853
+			22.2.3 The Algol family/858
+			22.2.4 Simula/865
+			22.2.5 C/868
+			22.2.6 C++/871
+			22.2.7 Today/874
+			22.2.8 Information sources/876
+	Chapter 23 Text Manipulation/881
+		23.1 Text/882
+		23.2 Strings/882
+		23.3 I/O streams/887
+		23.4 Maps/887
+			23.4.1 Implementation details/893
+		23.5 A problem/896
+		23.6 The idea of regular expressions/898
+			23.6.1 Raw string literals/900
+		23.7 Searching with regular expressions/901
+		23.8 Regular expression syntax/904
+			23.8.1 Characters and special characters/904
+			23.8.2 Character classes/905
+			23.8.3 Repeats/906
+			23.8.4 Grouping/908
+			23.8.5 Alternation/908
+			23.8.6 Character sets and ranges/909
+			23.8.7 Regular expression errors/910
+		23.9 Matching with regular expressions/912
+		23.10 References/917
+	Chapter 24 Numerics/921
+		24.1 Introduction/922
+		24.2 Size, precision, and overflow/922
+			24.2.1 Numeric limits/926
+		24.3 Arrays/927
+		24.4 C-style multidimensional arrays/928
+		24.5 The Matrix library/929
+			24.5.1 Dimensions and access/930
+			24.5.2 1D Matrix/933
+			24.5.3 2D Matrix/936
+			24.5.4 Matrix I/O/939
+			24.5.5 3D Matrix/939
+		24.6 An example: solving linear equations/940
+			24.6.1 Classical Gaussian elimination/942
+			24.6.2 Pivoting/943
+			24.6.3 Testing/944
+		24.7 Random numbers/946
+		24.8 The standard mathematical functions/949
+		24.9 Complex numbers/951
+		24.10 References/952
+	Chapter 25 Embedded Systems Programming/957
+		25.1 Embedded systems/958
+		25.2 Basic concepts/961
+			25.2.1 Predictability/964
+			25.2.2 Ideals/964
+			25.2.3 Living with failure/965
+		25.3 Memory management/967
+			25.3.1 Free-store problems/968
+			25.3.2 Alternatives to the general free store/971
+			25.3.3 Pool example/972
+			25.3.4 Stack example/974
+		25.4 Addresses, pointers, and arrays/975
+			25.4.1 Unchecked conversions/975
+			25.4.2 A problem: dysfunctional interfaces/976
+			25.4.3 A solution: an interface class/979
+			25.4.4 Inheritance and containers/983
+		25.5 Bits, bytes, and words/986
+			25.5.1 Bits and bit operations/987
+			25.5.2 bitset/991
+			25.5.3 Signed and unsigned/993
+			25.5.4 Bit manipulation/997
+			25.5.5 Bitfields/999
+			25.5.6 An example: simple encryption/1001
+		25.6 Coding standards/1006
+			25.6.1 What should a coding standard be?/1007
+			25.6.2 Sample rules/1009
+			25.6.3 Real coding standards/1015
+	Chapter 26 Testing/1021
+		26.1 What we want/1022
+			26.1.1 Caveat/1023
+		26.2 Proofs/1024
+		26.3 Testing/1024
+			26.3.1 Regression tests/1025
+			26.3.2 Unit tests/1026
+			26.3.3 Algorithms and non-algorithms/1033
+			26.3.4 System tests/1041
+			26.3.5 Finding assumptions that do not hold/1041
+		26.4 Design for testing/1043
+		26.5 Debugging/1044
+		26.6 Performance/1044
+			26.6.1 Timing/1047
+		26.7 References/1048
+	Chapter 27 The C Programming Language/1053
+		27.1 C and C++: siblings/1054
+			27.1.1 C/C++ compatibility/1056
+			27.1.2 C++ features missing from C/1057
+			27.1.3 The C standard library/1059
+		27.2 Functions/1060
+			27.2.1 No function name overloading/1060
+			27.2.2 Function argument type checking/1061
+			27.2.3 Function definitions/1063
+			27.2.4 Calling C from C++ and C++ from C/1064
+			27.2.5 Pointers to functions/1066
+		27.3 Minor language differences/1068
+			27.3.1 struct tag namespace/1068
+			27.3.2 Keywords/1069
+			27.3.3 Definitions/1070
+			27.3.4 C-style casts/1072
+			27.3.5 Conversion of void*/1073
+			27.3.6 enum/1074
+			27.3.7 Namespaces/1074
+		27.4 Free store/1075
+		27.5 C-style strings/1077
+			27.5.1 C-style strings and const/1079
+			27.5.2 Byte operations/1080
+			27.5.3 An example: strcpy()/1081
+			27.5.4 A style issue/1081
+		27.6 Input/output: stdio/1082
+			27.6.1 Output/1082
+			27.6.2 Input/1084
+			27.6.3 Files/1085
+		27.7 Constants and macros/1086
+		27.8 Macros/1087
+			27.8.1 Function-like macros/1088
+			27.8.2 Syntax macros/1090
+			27.8.3 Conditional compilation/1090
+		27.9 An example: intrusive containers/1091
+Part V Appendices/1103
+	Appendix A Language Summary/1105
+		A.1 General/1106
+			A.1.1 Terminology/1107
+			A.1.2 Program start and termination/1107
+			A.1.3 Comments/1108
+		A.2 Literals/1109
+			A.2.1 Integer literals/1109
+			A.2.2 Floating-point-literals/1111
+			A.2.3 Boolean literals/1111
+			A.2.4 Character literals/1111
+			A.2.5 String literals/1112
+			A.2.6 The pointer literal/1113
+		A.3 Identifiers/1113
+			A.3.1 Keywords/1113
+		A.4 Scope, storage class, and lifetime/1114
+			A.4.1 Scope/1114
+			A.4.2 Storage class/1115
+			A.4.3 Lifetime/1117
+		A.5 Expressions/1118
+			A.5.1 User-defined operators/1123
+			A.5.2 Implicit type conversion/1123
+			A.5.3 Constant expressions/1125
+			A.5.4 sizeof/1125
+			A.5.5 Logical expressions/1126
+			A.5.6 new and delete/1126
+			A.5.7 Casts/1127
+		A.6 Statements/1128
+		A.7 Declarations/1130
+			A.7.1 Definitions/1130
+		A.8 Built-in types/1131
+			A.8.1 Pointers/1132
+			A.8.2 Arrays/1133
+			A.8.3 References/1134
+		A.9 Functions/1135
+			A.9.1 Overload resolution/1136
+			A.9.2 Default arguments/1137
+			A.9.3 Unspecified arguments/1137
+			A.9.4 Linkage specifications/1138
+		A.10 User-defined types/1138
+			A.10.1 Operator overloading/1139
+		A.11 Enumerations/1139
+		A.12 Classes/1140
+			A.12.1 Member access/1140
+			A.12.2 Class member definitions/1144
+			A.12.3 Construction, destruction, and copy/1144
+			A.12.4 Derived classes/1148
+			A.12.5 Bitfields/1152
+			A.12.6 Unions/1153
+		A.13 Templates/1153
+			A.13.1 Template arguments/1154
+			A.13.2 Template instantiation/1155
+			A.13.3 Template member types/1156
+		A.14 Exceptions/1157
+		A.15 Namespaces/1159
+		A.16 Aliases/1160
+		A.17 Preprocessor directives/1160
+			A.17.1 #include/1160
+			A.17.2 #define/1161
+	Appendix B Standard Library Summary/1163
+		B.1 Overview/1164
+			B.1.1 Header files/1165
+			B.1.2 Namespace std/1168
+			B.1.3 Description style/1168
+		B.2 Error handling/1169
+			B.2.1 Exceptions/1170
+		B.3 Iterators/1171
+			B.3.1 Iterator model/1172
+			B.3.2 Iterator categories/1174
+		B.4 Containers/1176
+			B.4.1 Overview/1178
+			B.4.2 Member types/1179
+			B.4.3 Constructors, destructors, and assignments/1180
+			B.4.4 Iterators/1180
+			B.4.5 Element access/1181
+			B.4.6 Stack and queue operations/1181
+			B.4.7 List operations/1182
+			B.4.8 Size and capacity/1182
+			B.4.9 Other operations/1183
+			B.4.10 Associative container operations/1183
+		B.5 Algorithms/1184
+			B.5.1 Nonmodifying sequence algorithms/1185
+			B.5.2 Modifying sequence algorithms/1186
+			B.5.3 Utility algorithms/1188
+			B.5.4 Sorting and searching/1189
+			B.5.5 Set algorithms/1191
+			B.5.6 Heaps/1192
+			B.5.7 Permutations/1192
+			B.5.8 min and max/1193
+		B.6 STL utilities/1194
+			B.6.1 Inserters/1194
+			B.6.2 Function objects/1195
+			B.6.3 pair and tuple/1197
+			B.6.4 initializer_list/1198
+			B.6.5 Resource management pointers/1199
+		B.7 I/O streams/1200
+			B.7.1 I/O streams hierarchy/1202
+			B.7.2 Error handling/1203
+			B.7.3 Input operations/1204
+			B.7.4 Output operations/1205
+			B.7.5 Formatting/1205
+			B.7.6 Standard manipulators/1205
+		B.8 String manipulation/1207
+			B.8.1 Character classification/1207
+			B.8.2 String/1208
+			B.8.3 Regular expression matching/1209
+		B.9 Numerics/1212
+			B.9.1 Numerical limits/1212
+			B.9.2 Standard mathematical functions/1213
+			B.9.3 Complex/1214
+			B.9.4 valarray/1215
+			B.9.5 Generalized numerical algorithms/1215
+			B.9.6 Random numbers/1216
+		B.10 Time/1217
+		B.11 C standard library functions/1217
+			B.11.1 Files/1218
+			B.11.2 The printf() family/1218
+			B.11.3 C-style strings/1223
+			B.11.4 Memory/1224
+			B.11.5 Date and time/1225
+			B.10.6 Etc./1226
+		B.12 Other libraries/1227
+	Appendix C Getting Started with Visual Studio/1229
+		C.1 Getting a program to run/1230
+		C.2 Installing Visual Studio/1230
+		C.3 Creating and running a program/1231
+			C.3.1 Create a new project/1231
+			C.3.2 Use the std_lib_facilities.h header file/1231
+			C.3.3 Add a C++ source file to the project/1232
+			C.3.4 Enter your source code/1232
+			C.3.5 Build an executable program/1232
+			C.3.6 Execute the program/1233
+			C.3.7 Save the program/1233
+		C.4 Later/1233
+	Appendix D Installing FLTK/1235
+		D.1 Introduction/1236
+		D.2 Downloading FLTK/1236
+		D.3 Installing FLTK/1237
+		D.4 Using FLTK in Visual Studio/1237
+		D.5 Testing if it all worked/1238
+	Appendix E GUI Implementation/1239
+		E.1 Callback implementation/1240
+		E.2 Widget implementation/1241
+		E.3 Window implementation/1242
+		E.4 Vector_ref/1244
+		E.5 An example: manipulating Widgets/1245
+Glossary/1249
+Bibliography/1255
+Index/1259
