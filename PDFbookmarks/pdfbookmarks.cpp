@@ -5,9 +5,6 @@
 #include <sstream>
 
 
-void PDFbookmarks::setString(const string& str) { this->input = str; }
-string PDFbookmarks::getOutput() const { return this->output; }
-
 
 bool PDFbookmarks::loadFromFile(const string& filename)
 {

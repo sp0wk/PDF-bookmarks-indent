@@ -5,8 +5,13 @@
 
 using std::string;
 
+
 class PDFbookmarks
 {
+private:
+	string output;
+	string input;
+
 public:
 	//ctors and dtors
 	PDFbookmarks() = default;
@@ -15,16 +20,11 @@ public:
 	~PDFbookmarks() = default;
 	
 	//methods
-	void setString(const string& str);
-	string getOutput() const;
+	void setString(const string& str) { this->input = str; };
+	string getOutput() const { return this->output; };
 	bool loadFromFile(const string& filename);
 	bool writeToFile(const string& filename) const;
 	void process(int page_diff = 0);
-
-
-private:
-	string output = "";
-	string input = "";
 };
 
 
